@@ -1,0 +1,18 @@
+<%-include("partials/header")-%> 
+<h1>Compose</h1>
+<form action="/compose" method="post">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Title</label>
+        <input type="text" name="compose" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="mb-3">
+        <label for="validationTextarea">Review</label>
+        <textarea name="review" class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+        <div class="invalid-feedback">
+            Please enter a message in the textarea.
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Publish</button>
+    </form>
+<%-include("partials/footer")-%> 
